@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MUSLIM — Streetwear</title>
+<style>
+:root{--bg:#09090b;--panel:#131317;--panel2:#1b1b21;--text:#f7f7fa;--muted:#a1a1aa;--purple:#8b5cf6;--purple2:#a78bfa;--line:#292930}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Tahoma,Arial,sans-serif}button,input{font:inherit}button{cursor:pointer;border:0}.wrap{width:min(1180px,92%);margin:auto}
+.topline{height:34px;background:#17131f;color:#d8c8ff;display:flex;align-items:center;justify-content:center;font-size:11px;letter-spacing:1.5px}
+header{position:sticky;top:0;z-index:20;background:#09090beF;backdrop-filter:blur(18px);border-bottom:1px solid #ffffff12}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:10px;color:white;text-decoration:none;font-weight:950;letter-spacing:3px;font-size:24px}.mark{width:34px;height:34px;border-radius:12px;background:var(--purple);display:grid;place-items:center;font-weight:900;letter-spacing:0}
+.navlinks{display:flex;gap:28px}.navlinks a{color:#c4c4cc;text-decoration:none;font-size:13px}.navlinks a:hover{color:white}.actions{display:flex;gap:9px}.iconbtn{width:40px;height:40px;border-radius:14px;background:#19191f;color:white;border:1px solid var(--line);font-size:17px}.hero{padding:34px 0 22px}.heroBox{min-height:490px;border:1px solid #30283e;border-radius:30px;overflow:hidden;position:relative;background:radial-gradient(ellipse at 78% 48%,#5932a6 0,#24183b 26%,#111116 59%,#0d0d10 100%);display:flex;align-items:center;padding:clamp(25px,6vw,72px)}
+.heroBox:before{content:"";position:absolute;width:410px;height:410px;border:1px solid #ffffff20;border-radius:50%;right:10%;top:8%;box-shadow:0 0 0 45px #ffffff08,0 0 0 90px #ffffff05}
+.heroCopy{position:relative;z-index:2;max-width:560px}.eyebrow{color:#c4a9ff;font-size:11px;letter-spacing:4px;font-weight:800}.hero h1{font-size:clamp(48px,8vw,92px);line-height:.95;letter-spacing:-4px;margin:18px 0}.hero h1 span{color:var(--purple2)}.hero p{color:#c6c3ce;max-width:390px;line-height:1.9;font-size:14px}.btn{padding:14px 22px;border-radius:14px;font-weight:800;font-size:13px;transition:.2s}.btnPrimary{background:var(--purple);color:white;box-shadow:0 10px 35px #8b5cf644}.btnPrimary:hover{background:#7c3aed;transform:translateY(-2px)}.btnGhost{background:#ffffff0c;color:white;border:1px solid #ffffff2a;margin-right:8px}.heroVisual{position:absolute;left:8%;bottom:0;width:38%;height:88%;display:flex;align-items:end;justify-content:center}.silhouette{width:75%;height:82%;border-radius:46% 46% 18% 18%;background:linear-gradient(145deg,#37313f,#111116 65%);position:relative;filter:drop-shadow(0 20px 40px #0009);clip-path:polygon(30% 0,70% 0,100% 25%,86% 39%,80% 100%,20% 100%,14% 39%,0 25%)}.silhouette:after{content:"MUSLIM";position:absolute;top:38%;left:0;right:0;text-align:center;font-size:clamp(17px,3vw,34px);font-weight:950;letter-spacing:3px;color:#d7c6ff}
+.section{padding:45px 0}.sectionHead{display:flex;align-items:end;justify-content:space-between;margin-bottom:22px}.sectionHead h2{font-size:28px;margin:0;letter-spacing:-1px}.sectionHead p{color:var(--muted);font-size:12px;margin:7px 0 0}.smallLink{color:#c4a9ff;text-decoration:none;font-size:12px}
+.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.cat{min-height:130px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,#1b1b22,#101014);padding:20px;display:flex;flex-direction:column;justify-content:space-between;text-align:right;color:white;transition:.2s}.cat:hover{border-color:#8b5cf6;transform:translateY(-3px)}.cat b{font-size:19px}.cat span{color:var(--muted);font-size:11px}.cat .catIcon{font-size:28px;color:#bda3ff}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 20px}.filter{background:#17171d;border:1px solid var(--line);color:#c7c7cf;border-radius:30px;padding:9px 16px;font-size:12px}.filter.active{background:var(--purple);border-color:var(--purple);color:white}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.product{background:#121216;border:1px solid var(--line);border-radius:21px;overflow:hidden;transition:.2s}.product:hover{transform:translateY(-4px);border-color:#51416d}.productArt{height:235px;display:grid;place-items:center;position:relative;background:radial-gradient(circle at 50% 35%,#373044,#17151c 65%)}.productArt .garment{width:54%;height:73%;position:relative;filter:drop-shadow(0 14px 15px #0009);clip-path:polygon(27% 0,73% 0,100% 22%,84% 39%,78% 100%,22% 100%,16% 39%,0 22%);background:linear-gradient(130deg,#55515d,#19191f 70%)}.productArt .garment.tee{height:58%;clip-path:polygon(25% 0,40% 0,45% 10%,55% 10%,60% 0,75% 0,100% 20%,83% 38%,76% 100%,24% 100%,17% 38%,0 20%)}.productArt .garment.pants{width:48%;height:80%;clip-path:polygon(10% 0,90% 0,84% 100%,56% 100%,50% 43%,44% 100%,16% 100%)}.productArt .garment:after{content:"MUSLIM";position:absolute;top:42%;left:0;right:0;text-align:center;font-size:12px;letter-spacing:1px;font-weight:900;color:#d9c9ff}.tag{position:absolute;top:13px;right:13px;background:#8b5cf6;color:white;border-radius:30px;padding:6px 10px;font-size:10px}.productInfo{padding:14px}.productInfo h3{font-size:14px;margin:0 0 8px}.productInfo p{font-size:11px;color:var(--muted);margin:0 0 12px}.productBottom{display:flex;justify-content:space-between;align-items:center}.price{font-weight:850;font-size:14px}.add{background:#27212f;color:#d8c8ff;border-radius:11px;padding:9px 12px;font-size:11px}.add:hover{background:var(--purple);color:white}
+.promo{margin:30px 0 55px;border-radius:25px;padding:30px;background:linear-gradient(110deg,#432078,#8b5cf6 58%,#b49aff);display:flex;justify-content:space-between;align-items:center;gap:20px}.promo h2{font-size:27px;margin:0 0 8px}.promo p{margin:0;color:#eee3ff;font-size:12px}.promo .btn{background:white;color:#24133e;white-space:nowrap}
+footer{border-top:1px solid var(--line);padding:35px 0;color:var(--muted);font-size:12px}.footerRow{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footerBrand{color:white;font-weight:950;letter-spacing:3px;font-size:20px}.waFloat{position:fixed;bottom:22px;left:20px;z-index:25;background:#25d366;color:#071b0e;border-radius:50px;padding:13px 18px;font-weight:850;box-shadow:0 10px 30px #0008}
+.overlay{position:fixed;inset:0;background:#000b;z-index:40;display:none;align-items:center;justify-content:center;padding:18px}.overlay.show{display:flex}.modal{width:min(460px,100%);background:#17171d;border:1px solid #393344;border-radius:24px;padding:23px;box-shadow:0 25px 90px #000b}.modalHead{display:flex;justify-content:space-between;align-items:center}.modal h3{margin:0}.close{background:#292930;color:white;border-radius:10px;width:34px;height:34px}.modal label{display:block;color:#c9c4d2;font-size:12px;margin:16px 0 7px}.modal select,.modal input{width:100%;background:#0e0e12;border:1px solid #393944;color:white;border-radius:12px;padding:12px;outline:none}.modal .btn{width:100%;margin-top:18px}.note{font-size:11px;color:var(--muted);line-height:1.7;margin-top:10px}
+@media(max-width:800px){.navlinks{display:none}.heroBox{min-height:540px;align-items:start}.heroCopy{padding-top:22px}.heroVisual{width:62%;height:48%;left:2%}.categories{grid-template-columns:repeat(2,1fr)}.products{grid-template-columns:repeat(2,1fr)}.productArt{height:190px}.promo{align-items:flex-start;flex-direction:column}.hero h1{letter-spacing:-2px}}
+@media(max-width:420px){.products{gap:9px}.productArt{height:160px}.productInfo{padding:11px}.sectionHead h2{font-size:23px}.heroBox{min-height:510px}.heroVisual{width:68%;height:43%}.btn{padding:12px 15px}}
+</style>
+</head>
+<body>
+<div class="topline">NEW DROP — DEFINE YOUR OWN STYLE</div>
+<header><div class="wrap nav">
+<a class="brand" href="#"><span class="mark">M</span>MUSLIM</a>
+<nav class="navlinks"><a href="#home">الرئيسية</a><a href="#categories">الأقسام</a><a href="#shop">المتجر</a><a href="#contact">تواصل معنا</a></nav>
+<div class="actions"><button class="iconbtn" aria-label="بحث" onclick="document.getElementById('shop').scrollIntoView()">⌕</button><button class="iconbtn" aria-label="السلة" onclick="showCart()">▢ <small id="cartCount">0</small></button></div>
+</div></header>
+<main class="wrap">
+<section class="hero" id="home"><div class="heroBox">
+<div class="heroCopy"><div class="eyebrow">STREETWEAR / NEW COLLECTION</div><h1>WEAR THE<br><span>DIFFERENCE.</span></h1><p>مش مجرد لبس. دي طريقة تعبر بيها عن نفسك. اختار القطعة اللي شبهك وخلي حضورك يتكلم.</p><button class="btn btnPrimary" onclick="document.getElementById('shop').scrollIntoView()">اكتشف المجموعة ↙</button><button class="btn btnGhost" onclick="document.getElementById('categories').scrollIntoView()">الأقسام</button></div>
+<div class="heroVisual"><div class="silhouette"></div></div>
+</div></section>
+<section class="section" id="categories"><div class="sectionHead"><div><h2>اختار ستايلك</h2><p>قطع أساسية لكل يوم، بطابع مختلف.</p></div></div>
+<div class="categories">
+<button class="cat" onclick="setFilter('هوديز')"><span class="catIcon">◈</span><b>هوديز</b><span>HOODIES</span></button>
+<button class="cat" onclick="setFilter('تيشيرتات')"><span class="catIcon">✳</span><b>تيشيرتات</b><span>T-SHIRTS</span></button>
+<button class="cat" onclick="setFilter('بنطلونات')"><span class="catIcon">▥</span><b>بنطلونات</b><span>PANTS</span></button>
+<button class="cat" onclick="setFilter('جاكيتات')"><span class="catIcon">◇</span><b>جاكيتات</b><span>JACKETS</span></button>
+</div></section>
+<section class="section" id="shop"><div class="sectionHead"><div><h2>الأكثر طلبًا</h2><p>اختار القطعة والمقاس واللون، واطلب مباشرة على واتساب.</p></div><a class="smallLink" href="#shop">عرض المجموعة</a></div>
+<div class="filters"><button class="filter active" onclick="setFilter('الكل',this)">الكل</button><button class="filter" onclick="setFilter('هوديز',this)">هوديز</button><button class="filter" onclick="setFilter('تيشيرتات',this)">تيشيرتات</button><button class="filter" onclick="setFilter('بنطلونات',this)">بنطلونات</button><button class="filter" onclick="setFilter('جاكيتات',this)">جاكيتات</button></div>
+<div class="products" id="products"></div></section>
+<section class="promo"><div><h2>YOUR STYLE. YOUR RULES.</h2><p>اكتشف قطع MUSLIM الجديدة وخليك مختلف.</p></div><button class="btn" onclick="document.getElementById('shop').scrollIntoView()">تسوق الآن</button></section>
+</main>
+<footer id="contact"><div class="wrap footerRow"><div><div class="footerBrand">MUSLIM</div><p>Streetwear made to express you.</p></div><div><b style="color:white">التواصل والطلبات</b><p>كل الطلبات والاستفسارات من خلال واتساب.</p><a class="smallLink" href="#" onclick="openWhatsAppGeneral();return false">راسلنا على واتساب</a></div><div>© 2026 MUSLIM. All rights reserved.</div></div></footer>
+<button class="waFloat" onclick="openWhatsAppGeneral()">واتساب ↗</button>
+<div class="overlay" id="orderModal"><div class="modal"><div class="modalHead"><h3 id="modalTitle">اطلب المنتج</h3><button class="close" onclick="closeModal()">×</button></div>
+<label>المقاس</label><select id="size"><option value="">اختار المقاس</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option></select>
+<label>اللون</label><select id="color"><option value="">اختار اللون</option><option>أسود</option><option>أبيض</option><option>رمادي</option><option>بنفسجي</option></select>
+<label>الكمية</label><input id="qty" type="number" min="1" value="1">
+<button class="btn btnPrimary" onclick="sendOrder()">كمّل الطلب على واتساب</button><div class="note">هيتم فتح واتساب برسالة فيها تفاصيل اختيارك. تأكيد الطلب والتوصيل هيكونوا معانا مباشرة.</div></div></div>
+<div class="overlay" id="cartModal"><div class="modal"><div class="modalHead"><h3>طلباتي المختارة</h3><button class="close" onclick="document.getElementById('cartModal').classList.remove('show')">×</button></div><div id="cartItems" class="note">لسه مفيش منتجات مضافة.</div><button class="btn btnPrimary" onclick="sendCart()">ابعت الطلب على واتساب</button></div></div>
+<script>
+const WHATSAPP_NUMBER='201020725625';
+const items=[
+{name:'هودي MUSLIM الأساسي',cat:'هوديز',price:'850',type:'hoodie',tag:'BEST SELLER'},
+{name:'تيشيرت Signature',cat:'تيشيرتات',price:'420',type:'tee',tag:'NEW'},
+{name:'بنطلون Cargo واسع',cat:'بنطلونات',price:'690',type:'pants',tag:''},
+{name:'جاكيت Street Edition',cat:'جاكيتات',price:'990',type:'hoodie',tag:'LIMITED'},
+{name:'هودي Oversized Purple',cat:'هوديز',price:'890',type:'hoodie',tag:'NEW'},
+{name:'تيشيرت Boxy Fit',cat:'تيشيرتات',price:'450',type:'tee',tag:''},
+{name:'بنطلون Relaxed Fit',cat:'بنطلونات',price:'720',type:'pants',tag:''},
+{name:'تيشيرت Logo Print',cat:'تيشيرتات',price:'390',type:'tee',tag:''}
+];
+let selected=null,cart=[];
+function render(filter='الكل'){document.getElementById('products').innerHTML=items.filter(x=>filter==='الكل'||x.cat===filter).map((p,i)=>`<article class="product"><div class="productArt"><span class="tag">${p.tag||'MUSLIM'}</span><div class="garment ${p.type}"></div></div><div class="productInfo"><h3>${p.name}</h3><p>${p.cat} · Oversized fit</p><div class="productBottom"><button class="add" onclick="choose(${items.indexOf(p)})">اختار المنتج +</button></div></div></article>`).join('')}
+function setFilter(f,el){render(f);document.querySelectorAll('.filter').forEach(b=>b.classList.toggle('active',b.textContent.trim()===(f==='الكل'?'الكل':f)));document.getElementById('shop').scrollIntoView({behavior:'smooth'})}
+function choose(i){selected=items[i];document.getElementById('modalTitle').textContent=selected.name;document.getElementById('orderModal').classList.add('show')}
+function closeModal(){document.getElementById('orderModal').classList.remove('show')}
+function wa(message){if(!WHATSAPP_NUMBER){alert('لسه محتاجين نضيف رقم واتساب البراند في إعدادات الموقع.');return}window.open('https://wa.me/'+WHATSAPP_NUMBER+'?text='+encodeURIComponent(message),'_blank')}
+function sendOrder(){let s=document.getElementById('size').value,c=document.getElementById('color').value,q=document.getElementById('qty').value;if(!s||!c||!q||q<1){alert('اختار المقاس واللون والكمية الأول.');return}wa('مرحبًا MUSLIM، عايز أطلب المنتج ده:\\nالمنتج: '+selected.name+'\\nالسعر: '+selected.price+' جنيه\\nالمقاس: '+s+'\\nاللون: '+c+'\\nالكمية: '+q);closeModal()}
+function addToCart(i){cart.push(items[i]);document.getElementById('cartCount').textContent=cart.length}
+function showCart(){document.getElementById('cartItems').innerHTML=cart.length?cart.map(p=>'<p>'+p.name+'</p>').join(''):'لسه مفيش منتجات مضافة.';document.getElementById('cartModal').classList.add('show')}
+function sendCart(){if(!cart.length){alert('اختار منتجات الأول.');return}wa('مرحبًا MUSLIM، مهتم بالمنتجات دي:\\n'+cart.map(p=>p.name).join('\\n'));} 
+function openWhatsAppGeneral(){wa('مرحبًا MUSLIM، عندي استفسار بخصوص المنتجات والطلبات.')}
+render();
+</script>
+</body></html>
